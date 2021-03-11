@@ -1,0 +1,232 @@
+.c-table {
+  > :first-child {
+    @include media-breakpoint-up(lg) {
+      position: sticky;
+      top: 80px;
+      z-index: 1;
+      background: #fff;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    @include media-breakpoint-up(xl) {
+      top: 90px;
+    }
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+    .c-table-col-head, .c-table-col-plan {
+      > div {
+        padding-top: 1.75rem;
+        padding-bottom: 1.75rem;
+      }
+    }
+  }
+
+  > .c-table-row:not(:first-child) {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+}
+
+.c-table-row {
+  @include make-row();
+  align-items: stretch;
+  margin-right: 0;
+  margin-left: 0;
+  height: 100%;
+}
+
+.c-table-col-plan, .c-table-col-head {
+  @include make-col-ready();
+  > div {
+    @include media-breakpoint-up(lg) {
+      height: 100%;
+    }
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-up(lg) {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+  .h3 {
+    margin-bottom: 0;
+  }
+}
+
+.c-table-col-head {
+  padding-left: 0;
+  @include media-breakpoint-down(md) {
+    color: $brand-black;
+    font-weight: 600;
+  }
+  @include media-breakpoint-up(lg) {
+    @include make-col(4)
+  }
+  > div {
+    @include media-breakpoint-down(md) {
+      padding-top: 2rem;
+      padding-bottom: 1.5rem;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-right: 2rem;
+    }
+  }
+}
+
+.c-table-col-plans {
+  @include make-col-ready();
+  padding-right: 0;
+  padding-left: 0;
+  @include media-breakpoint-up(lg) {
+    @include make-col(12);
+  }
+}
+
+.c-table-col-plan {
+  @include media-breakpoint-down(md) {
+    @include make-col(4);
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-bottom: 2rem;
+      min-width: 0;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    @include make-col(4);
+    .plan-name {
+      display: none;
+    }
+  }
+  .plan-name {
+    color: $brand-black;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    @include text-truncate;
+  }
+}
+
+.c-table-col-plans .c-table-row {
+  margin-left: -13px;
+  margin-right: -13px;
+}
+
+.marker {
+  svg {
+    @include media-breakpoint-up(lg) {
+      margin-right: 1rem;
+      margin-left: 0;
+    }
+  }
+}
+
+.c-table-body {
+  font-size: .875rem;
+  .true {
+    .marker-icon {
+      color: $brand-green;
+    }
+  }
+}
+
+.c-table-set-row {
+  font-size: .75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $brand-black;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  @include media-breakpoint-up(lg) {
+    font-size: .875rem;
+    padding-top: 4rem;
+    //border-bottom: 1px solid rgba(0, 0, 0, .1);
+  }
+}
+
+.c-table-row.description-short {
+  .c-table-col-plan-desc {
+    @include media-breakpoint-down(md) {
+      font-size: 11px;
+      margin-top: .5rem;
+    }
+  }
+}
+
+.c-table-row.description-long {
+  flex-direction: row;
+  @include media-breakpoint-down(md) {
+    .c-table-col-plan {
+      @include make-col(16);
+    }
+    .c-table-col-plan-head {
+      display: flex;
+    }
+    .marker svg {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.c-table-row.actions {
+  @include media-breakpoint-up(lg) {
+    border-top: 0 !important;
+  }
+
+  .btn {
+    padding-top: .875rem;
+    padding-bottom: .875rem;
+    border-radius: 17px;
+    width: 100%;
+    @include text-truncate;
+  }
+  .c-table-col-head {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  @include media-breakpoint-up(lg) {
+    .c-table-col-head {
+      div {
+        display: none;
+      }
+    }
+  }
+
+  .c-table-col-plan > * {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  @include media-breakpoint-down(md) {
+    .c-table-col-plan {
+      @include make-col(16);
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+      margin-bottom: 2.5rem;
+      >:first-child {
+        @include make-col(6);
+        margin-bottom: 0;
+      }
+      >:last-child {
+        @include make-col(10);
+        > * {
+          margin-left: auto;
+        }
+      }
+      .btn {
+        max-width: 196px;
+      }
+    }
+    .c-table-row {
+      flex-direction: row;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.c-table-col-plan-head {
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}

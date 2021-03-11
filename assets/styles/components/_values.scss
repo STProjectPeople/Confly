@@ -1,0 +1,16 @@
+.value {
+  margin-bottom: 2rem;
+}
+
+.value-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  div:first-child {
+    margin-right: 1.5rem;
+  }
+}
+
+.value p {
+  color: $body-color;
+}

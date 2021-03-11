@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/app.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "customizer.js": {
+      "files": [
+        "scripts/customizer.js"
+      ]
+    }
+  },
+  "config": {
+    "devUrl": "http://localhost/confly-landing/"
+  }
+}

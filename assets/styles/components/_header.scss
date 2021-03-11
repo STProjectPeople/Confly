@@ -1,0 +1,50 @@
+.header {
+  width: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  @include media-breakpoint-up($mobileNavUp) {
+    padding: 1.5em 0;
+  }
+  z-index: $zindex-fixed;
+  background: transparent;
+  transition: padding .3s, box-shadow .2s;
+  will-change: padding, box-shadow;
+}
+
+.menu-activated .header {
+  background: #fff;
+}
+
+.header-sticky .header {
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.075);
+  padding: 0;
+}
+
+.header-content {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include media-breakpoint-down($mobileNavDown) {
+    height: 80px;
+  }
+}
+
+.hamburger {
+  display: flex;
+  @include media-breakpoint-up($mobileNavUp) {
+    display: none;
+  }
+}
+
+.header-actions {
+  display: flex;
+  @include media-breakpoint-down($mobileNavDown) {
+    display: none;
+  }
+  > div:first-child {
+    color: $brand-blue;
+  }
+}

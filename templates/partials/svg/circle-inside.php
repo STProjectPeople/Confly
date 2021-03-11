@@ -1,0 +1,1 @@
+<svg width="758" height="758" viewBox="0 0 758 758" fill="none" xmlns="http://www.w3.org/2000/svg"><circle opacity=".3" cx="378.243" cy="378.242" r="256.698" stroke="#9799CE" stroke-width=".527"/><circle opacity=".2" cx="379" cy="379" r="378.736" stroke="#9799CE" stroke-width=".527"/></svg>

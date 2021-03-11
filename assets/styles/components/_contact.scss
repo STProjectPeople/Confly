@@ -1,0 +1,22 @@
+.contact-location-info {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-radius: 5px;
+    background: $brand-blue;
+    top: 10px;
+    left: -23px;
+  }
+}
+
+.contact-location {
+  img {
+    @include media-breakpoint-down(sm) {
+      @include img-fluid;
+      max-width: 444px;
+    }
+  }
+}

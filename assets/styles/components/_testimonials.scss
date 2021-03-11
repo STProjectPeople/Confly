@@ -1,0 +1,69 @@
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  @include media-breakpoint-down(sm) {
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .container, [class*="col"] {
+      padding: 0;
+    }
+    .row {
+      margin: 0;
+    }
+  }
+}
+
+.testimonial-box {
+  font-size: 1.125rem;
+  @include media-breakpoint-up(lg) {
+    max-width: calc(50% - 60px);
+  }
+  @include media-breakpoint-down(md) {
+    &:not(:last-child) {
+      padding-right: 20px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    padding-right: 20px;
+    padding-left: 20px;
+    min-width: calc(100% - 50px);
+    font-size: 1rem;
+  }
+}
+
+.testimonial-box-content {
+  position: relative;
+  color: transparentize($brand-black, .17);
+  &:before {
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+    display: block;
+    content: '';
+    position: absolute;
+    left: -14px;
+    top: -2.5rem;
+    width: 28px;
+    height: 21px;
+    background: url('../images/quote.svg') no-repeat center center;
+  }
+}
+
+.testimonial-box-sign {
+  display: flex;
+  align-items: center;
+  color: $brand-black;
+  margin-top: 2.5rem;
+}
+
+.testimonial-box-sign-image {
+  margin-right: 1.5rem;
+  width: 64px;
+  height: 64px;
+  img {
+    border-radius: 32px;
+    @include img-fluid;
+  }
+}

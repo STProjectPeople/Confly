@@ -1,0 +1,124 @@
+.footer {
+  border-top: 1px solid transparentize($brand-black, 0.9);
+}
+
+.footer-top {
+  padding: 4.25rem 0;
+}
+
+.footer-b {
+}
+
+.sm {
+  display: flex;
+}
+
+.sm-item {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $brand-black;
+  margin-right: 0.5rem;
+  border-radius: 13px;
+  color: #fff;
+  transition: 0.2s ease;
+  will-change: background;
+  &:hover {
+    background: $brand-blue;
+    color: #fff;
+  }
+}
+
+.footer-info {
+  padding: 2rem 0;
+  border-top: 1px solid transparentize($brand-black, 0.9);
+  font-size: 0.8125rem;
+}
+
+.footer .list {
+  font-size: 0.875rem;
+}
+.language-switcher {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  .widget {
+    width: 58px;
+    position: absolute;
+    right: 0;
+    .wpml-ls-legacy-dropdown-click a.wpml-ls-item-toggle:after {
+      right: 7px;
+    }
+    .wpml-ls-item-toggle {
+      background: #f6f6f6;
+      border-radius: 20px;
+      overflow: hidden;
+      padding: 6px;
+      border-color: transparent;
+      .wpml-ls-flag {
+        width: 27px;
+        height: 27px;
+        border-radius: 50px;
+      }
+    }
+    .wpml-ls-sub-menu {
+      border: none;
+      .wpml-ls-item {
+        background: #f6f6f6;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 6px;
+        border-color: transparent;
+        .wpml-ls-link {
+          padding: 0;
+          background: none;
+          border: none;
+        }
+        .wpml-ls-flag {
+          width: 27px;
+          height: 27px;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+}
+.footer-landing {
+  .footer-top{
+    @include media-breakpoint-down(md) {
+      padding: 2rem 0;
+    }
+  }
+  &__logo,&__menu{
+    @include media-breakpoint-down(md) {
+      margin-bottom:1.5rem;
+    }
+  }
+  &__menu{
+
+  }
+  &__social{
+
+  }
+  .landing-footer-menu {
+    .list {
+      .menu-item {
+        padding-right: 10px;
+        border-right: 1px solid $body-color;
+        margin-right: 10px;
+        &:last-of-type {
+          padding-right: 0;
+          border-right: none;
+          margin-right: 0;
+        }
+        a {
+          strong {
+            color: #23282f;
+          }
+        }
+      }
+    }
+  }
+}

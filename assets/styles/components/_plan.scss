@@ -1,0 +1,61 @@
+.plan {
+  padding: 30px;
+  border-radius: 26px;
+  border: 1px solid transparentize($body-color, .8);
+  margin-bottom: 2rem;
+}
+
+.plan-subtitle {
+  font-size: 1.625rem;
+  font-weight: $headings-font-weight;
+  color: $brand-black;
+}
+
+.plan-price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  *:first-child {
+    font-weight: $headings-font-weight;
+    color: $brand-black;
+    margin-bottom: 0;
+    margin-right: .75rem;
+  }
+  .price-info {
+    font-size: .875rem;
+  }
+}
+
+.plan-popular {
+  position: relative;
+  .badge {
+    background: $brand-green;
+    color: #fff;
+    font-size: 10px;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    padding: .3125rem .75rem;
+    min-width: 72px;
+    text-align: center;
+  }
+}
+
+.plan-list {
+  font-size: .875rem;
+  > div {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    svg {
+      color: $brand-black;
+    }
+    div:nth-child(2) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    > .info {
+      margin-left: auto;
+    }
+  }
+}

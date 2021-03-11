@@ -1,0 +1,44 @@
+.nav-links-item {
+  display: flex;
+  height: 53px;
+  border-radius: 27px;
+  align-items: center;
+  padding: 0 2rem;
+  margin: 1.5rem 0;
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  color: $body-color;
+  background: transparent;
+  svg {
+    display: none;
+  }
+  &.active {
+    background: $light-gray;
+    font-weight: 600;
+    color: $brand-black;
+    svg {
+      display: block;
+      color: $brand-blue;
+    }
+    .nav-links-item-number {
+      color: $brand-blue;
+    }
+  }
+  >div:nth-child(2) {
+    @include text-truncate;
+  }
+  .nav-links-item-number {
+    font-weight: 600;
+    min-width: 48px;
+    text-align: left;
+    @include media-breakpoint-up(xl) {
+      margin-right: 1.5rem;
+    }
+    color: $brand-black;
+  }
+}
+
+.nav-links-item-more {
+  margin-left: auto;
+}

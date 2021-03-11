@@ -1,0 +1,13 @@
+.features-2-li {
+  margin-bottom: 3rem;
+}
+
+.features-2-li-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  > div:last-child {
+    margin-left: 1rem;
+  }
+}

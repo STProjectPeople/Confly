@@ -1,0 +1,19 @@
+.attachment {
+  display: flex;
+  align-items: center;
+  color: $brand-black;
+  font-weight: 600;
+  > div:first-child {
+    margin-right: 1rem;
+    display: flex;
+    + div {
+      margin-right: 1rem;
+    }
+  }
+  > div:last-child {
+    margin-left: auto;
+  }
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}

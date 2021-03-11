@@ -1,0 +1,1 @@
+<svg width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.291 5.5h6.417M5.5 2.292L8.708 5.5 5.5 8.708" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>

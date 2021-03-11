@@ -1,0 +1,13 @@
+.features-3-li-header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  > div:first-child {
+    margin-right: 1.5rem;
+  }
+}
+
+.features-3-li {
+  margin-bottom: 4rem;
+}

@@ -1,0 +1,51 @@
+.section-bg-light-b .accordion .card {
+  border: none !important;
+  box-shadow: 0px 20px 40px rgba(0, 122, 255, 0.13) !important;
+}
+
+.accordion {
+  .card {
+    margin-bottom: 1rem;
+    border-radius: 17px !important;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  }
+  .card-header {
+    background: transparent;
+    border: none;
+    padding: 0;
+    .btn {
+      box-shadow: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.75rem 3rem;
+      text-align: left;
+      width: 100%;
+      font-size: $h3-font-size;
+      @include media-breakpoint-down(md) {
+        padding: 1.5rem 1.75rem;
+        font-size: 1.25rem;
+      }
+      font-weight: 600;
+      color: $brand-black;
+      > div {
+        margin-left: 1rem;
+        > svg {
+          transition: transform .2s ease;
+        }
+      }
+      &[aria-expanded="true"] {
+        > div > svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  .card-body {
+    padding: 0 3rem 1.75rem 3rem;
+    @include media-breakpoint-down(md) {
+      padding: 0 1.75rem 1.5rem 1.75rem;
+    }
+  }
+}

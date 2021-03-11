@@ -1,0 +1,13 @@
+.logos-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  > div {
+    margin: 2rem;
+  }
+  img {
+    opacity: .4;
+    @include img-fluid;
+  }
+}

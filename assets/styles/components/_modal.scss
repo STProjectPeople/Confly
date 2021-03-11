@@ -1,0 +1,38 @@
+.modal .close {
+  opacity: 1;
+  color: $brand-black;
+  &:hover {
+    color: $brand-blue;
+  }
+}
+
+.modal-dialog {
+
+}
+
+.modal-content {
+  border: none;
+  @include media-breakpoint-down(sm) {
+    border-radius: 0;
+  }
+}
+
+.modal-transparent {
+  background: transparent !important;
+}
+
+.modal-body {
+  padding-top: 3rem;
+  @include media-breakpoint-down(sm) {
+    padding: 30px;
+  }
+}
+
+.modal-header {
+  padding-top: 4rem;
+  @include media-breakpoint-down(sm) {
+    padding: 30px;
+  }
+  border-bottom: 0;
+  padding-bottom: 0;
+}

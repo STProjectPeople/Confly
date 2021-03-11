@@ -1,0 +1,1 @@
+<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".2" stroke="#000" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"><path d="M8 14.667A6.667 6.667 0 108 1.333a6.667 6.667 0 000 13.334zM8 10.667V8M8 5.333h.008"/></g></svg>

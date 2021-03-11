@@ -1,0 +1,22 @@
+.case-studies {
+  margin-bottom: -7rem;
+}
+
+.case-study-box {
+  margin-bottom: 7rem;
+}
+
+.case-study-box-image {
+  height: 43px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+
+.case-study-summary {
+  @extend .toc;
+}
+
+.case-study-summary-title {
+  @extend .toc-title;
+}

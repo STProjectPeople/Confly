@@ -1,0 +1,70 @@
+.section {
+  margin: 8rem 0;
+  overflow: hidden;
+}
+
+.section-top {
+  margin-top: 0;
+  padding-top: 11rem;
+}
+
+.section-overflow {
+  overflow: visible;
+}
+
+.section-overflow-h {
+  overflow: hidden;
+}
+
+.section-border {
+  border-top: 1px solid transparentize($brand-black, .9);
+  border-bottom: 1px solid transparentize($brand-black, .9);
+}
+
+.section-bg {
+  padding: 8rem 0;
+  position: relative;
+  + .section-bg {
+    margin-top: -8rem;
+  }
+}
+
+.section-bg-light-b {
+  background: $light-blue;
+}
+
+.section-bg-light-y {
+  background: $light-yellow;
+}
+
+.section-bg-light-p {
+  background: $light-pink;
+}
+
+.section-bg-light-g {
+  background: $light-green;
+}
+
+.section-sm {
+  margin: -3rem 0;
+}
+
+.section-bg-circles {
+  svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    pointer-events: none;
+    @include media-breakpoint-down(md) {
+      @include img-fluid;
+    }
+  }
+  &.sm {
+    svg {
+      max-width: 522px;
+      top: 75%;
+    }
+  }
+}

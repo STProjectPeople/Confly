@@ -1,0 +1,20 @@
+.nav-pills {
+  border: 1px solid transparentize($brand-black, .9);
+  padding: 5px;
+  border-radius: 26px;
+  font-weight: 600;
+  color: $brand-black;
+  .badge-pill {
+    background: #fff;
+    color: $brand-blue;
+    transition: none;
+  }
+  .nav-link:not(.active) .badge-pill {
+    background: $brand-blue;
+    color: #fff;
+  }
+  //.nav-item {
+  //  flex: 1;
+  //  text-align: center;
+  //}
+}
